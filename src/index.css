@@ -1,0 +1,132 @@
+:root {
+  --btn-color: #35858B;
+  --primary-color: #1E5F74;
+  --border-color: #fff;
+}
+
+* {box-sizing: inherit;}
+
+html {
+  /* 62.5% ~10px --> 1 hack */
+  font-size: 62.5%; 
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.nav-btn__home {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 4.2rem;
+  padding-left: 10px;
+}
+
+.card-container.grid.wide {
+  width: 800px;
+}
+
+.user-card {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .1);
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+.card-icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  font-size: 4rem;
+  margin: auto;
+  text-align: center;
+  line-height: 10rem;
+  background-color: #CCF3EE;
+  color: #1E5F74;
+}
+
+.card-fullname {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.card-username {
+  font-size: 1.4rem;
+  color: #417D7A;
+  font-style: italic;
+}
+
+.card-link {
+  /* text-decoration: none; */
+  font-size: 1.4rem;
+  color: #54BAB9;
+
+}
+
+.detail-btn {
+  margin: 20px 20px 0;
+  background-color: var(--btn-color);
+  border-radius: 12px;
+  position: relative;
+
+}
+
+.detail-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 4.2rem;
+  font-weight: 500;
+}
+
+/* Details page */
+
+.detail__container {
+  max-width: 400px;
+  border: 1px solid var(--border-color);
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+
+.detail__header {
+  color: var(--primary-color);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.detail__info-list li{
+  font-size: 2rem;
+  line-height: 4rem;;
+  color: #18978F;
+}
