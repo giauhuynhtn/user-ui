@@ -5,7 +5,6 @@ import {useParams} from 'react-router-dom'
 function DetailsPage({data}) {
     const params = useParams()
     let userInfo = data[params.id - 1]
-    console.log(userInfo);
 
     return (
         <div className="detail__container">

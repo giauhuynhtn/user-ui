@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import HomePage from './pages/HomePage.js'
@@ -16,9 +16,9 @@ function App() {
 
   return (
     <div className="app">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <nav>
         <Link to="/" className="nav-btn__home">Home Page</Link>
-      </BrowserRouter>
+      </nav>
       <Routes>
           <Route path="/" element={<HomePage data={data}/>} />
           <Route path="/details/user/:id" element={<DetailsPage data={data}/>} />
